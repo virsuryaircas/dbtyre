@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dbtyre - Helm Charts for Databases</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .tyre {
+        width: 120px;
+        height: 120px;
+        border: 10px solid #333;
+        border-radius: 50%;
+        background: radial-gradient(circle, #111 30%, #222 70%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0 0 0 4px #444, 0 2px 8px rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+      .tyre::before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        width: 90%;
+        height: 90%;
+        border: 2px dashed #444;
+      }
+      .tyre img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen font-sans">
+    <header class="text-center py-10">
+      <h1 class="text-4xl font-bold tracking-tight">🚛 dbtyre</h1>
+      <p class="text-lg mt-2 text-gray-300">
+        Helm Charts for Databases – Roll into Production, Smoothly.
+      </p>
+    </header>
+
+    <main class="flex justify-center items-center px-4">
+      <div class="flex flex-wrap gap-8 justify-center">
+        <!-- MongoDB Tyre -->
+        <div class="tyre">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+        </div>
+
+        <!-- PostgreSQL Tyre -->
+        <div class="tyre">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+        </div>
+
+        <!-- MSSQL Tyre -->
+        <div class="tyre">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="MSSQL" />
+        </div>
+
+        <!-- MySQL Tyre -->
+        <div class="tyre">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+        </div>
+
+        <!-- Redis Tyre -->
+        <div class="tyre">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center text-sm text-gray-500 mt-12 pb-6">
+      MIT License • GitHub Pages by <a href="https://github.com/YOUR-USERNAME/dbtyre" class="underline">dbtyre</a>
+    </footer>
+  </body>
+</html>
